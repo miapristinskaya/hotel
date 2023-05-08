@@ -1,0 +1,68 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0; /*прибрано білі края*/
+}
+
+header {
+  background-image: url("../hotel/images/sea.jpg");
+  text-align: center;
+  padding: 35px 0 175px;
+}
+
+h1 {
+  font-size: 60px;
+  color: #f0f0f0;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 75px;
+}
+
+p {
+  font-size: 20px;
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.logotype {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  margin-bottom: 227px;
+}
+
+.btn {
+  background-color: #ff9728;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 84px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.info {
+  background-color: #def0ff;
+}
+
+.container__info {
+  width: 745px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #0f4c92;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text_info {
+  color: #0f4c92;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
