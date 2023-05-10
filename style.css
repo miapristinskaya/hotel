@@ -3,24 +3,25 @@ body {
   margin: 0; /*прибрано білі края*/
 }
 
+/*ВЕРХНЯ ЧАСТИНА*/
+
 header {
   background-image: url("../hotel/images/sea.jpg");
+  background-size: cover;
   text-align: center;
   padding: 35px 0 175px;
+  color: #f0f0f0;
+  text-align: center;
 }
 
 h1 {
   font-size: 60px;
-  color: #f0f0f0;
-  text-align: center;
   font-weight: 700;
   margin-bottom: 75px;
 }
 
 p {
   font-size: 20px;
-  color: #f0f0f0;
-  text-align: center;
   margin-bottom: 31px;
 }
 
@@ -41,6 +42,8 @@ p {
   font-size: 21px;
   cursor: pointer;
 }
+
+/*НЕВЕЛИКІ ЧАСТИНИ З ТЕКСТОМ*/
 
 .info {
   background-color: #def0ff;
@@ -65,4 +68,166 @@ h2 {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+}
+
+/*БЛОКИ З ВЕЛИКИМИ ФОТО*/
+
+.advantages {
+  background-color: #f2f9ff;
+  padding: 10px 0;
+}
+
+.advantages__blocks {
+  margin: 0 auto;
+  width: 1245px;
+}
+
+.advantage_block {
+  display: flex;
+  gap: 80px;
+  margin: 80px 0;
+}
+
+.advantage_description {
+  padding-top: 65px;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f4c92;
+}
+
+.advantage_date {
+  font-size: 20px;
+  color: #1b1b1b;
+  margin-top: 20px;
+}
+
+.advantage_text {
+  font-size: 18px;
+  color: #1b1b1b;
+  margin-top: 40px;
+  line-height: 26px;
+}
+
+.advantage_button {
+  font-size: 21px;
+  color: #ffffff;
+  border: none;
+  border-radius: 95px;
+  padding: 15px 70px;
+  background-color: #0d599c;
+  margin-top: 40px;
+}
+
+.advantage_block:nth-child(2) img {
+  order: 1;
+}
+
+/*БРОНЮВАННЯ*/
+
+.booking {
+  background-color: #b5e4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 97px 0;
+}
+
+.container__booking {
+  background-color: #2b477c;
+  width: 785px;
+  height: 348px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 61px 60px 30px;
+  box-sizing: border-box;
+}
+
+.booking_heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #f4f4f4;
+  margin-top: 0;
+}
+
+.booking_text {
+  font-size: 18px;
+  color: #f4f4f4;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  line-height: 21px;
+}
+
+.booking_button {
+  background-color: #ff9728;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 84px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/*МОДАЛЬНЕ ВІКНО*/
+
+.overlay {
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*display: flex;*/
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.callback {
+  background-color: blue;
+  width: 875px;
+  height: 502px;
+  padding: 100px 110px 50px;
+}
+
+.callback h3 {
+  color: #f9f9f9;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.callback input {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #f7f6f6;
+  font-size: 18px;
+  padding: 15px 30px;
+  width: 350px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  /*додати відступ*/
+}
+
+.callback input::placeholder {
+  font-size: 18px;
+  color: #b2e3ffd9;
+  font-weight: 300;
+}
+
+.callback .callback_button {
+  background-color: #ff9728;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 84px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
