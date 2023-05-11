@@ -3,7 +3,7 @@ body {
   margin: 0; /*прибрано білі края*/
 }
 
-/*ВЕРХНЯ ЧАСТИНА*/
+/*ВЕРХНЯ ЧАСТИНА - HEADER*/
 
 header {
   background-image: url("../hotel/images/sea.jpg");
@@ -43,7 +43,7 @@ h1 {
   cursor: pointer;
 }
 
-/*НЕВЕЛИКІ ЧАСТИНИ З ТЕКСТОМ - ІНФО*/
+/*НЕВЕЛИКІ ЧАСТИНИ З ТЕКСТОМ - INFO*/
 
 .info {
   background-color: #def0ff;
@@ -70,7 +70,7 @@ h2 {
   text-align: center;
 }
 
-/*БЛОКИ З ВЕЛИКИМИ ФОТО*/
+/*БЛОКИ З ВЕЛИКИМИ ФОТО - ADVANTAGES*/
 
 .advantages {
   background-color: #f2f9ff;
@@ -125,7 +125,7 @@ h4 {
   order: 1;
 }
 
-/*БРОНЮВАННЯ*/
+/*БРОНЮВАННЯ - BOOKING*/
 
 .booking {
   background-color: #b5e4ff;
@@ -172,7 +172,7 @@ h4 {
   cursor: pointer;
 }
 
-/*МОДАЛЬНЕ ВІКНО*/
+/*МОДАЛЬНЕ ВІКНО - CALLBACK*/
 
 .overlay {
   top: 0;
@@ -183,13 +183,17 @@ h4 {
   width: 100%;
   height: 100%;
   display: flex;
-  /*display: none;*/
+  display: none;
   justify-content: center;
   align-items: center;
 }
 
 .callback {
-  background-color: #0080bf; /*linear-gradient(327.75deg, #0080bf 9.35%, #00496c 117.99%) - не виходить застосувати цей градієнт*/
+  background: linear-gradient(
+    327.75deg,
+    #0080bf 9.35%,
+    #00496c 117.99%
+  ); /*а якщо писати background-color, то не виходить застосувати градієнт*/
   width: 875px;
   height: 502px;
   padding: 100px 78px 50px;
@@ -215,7 +219,8 @@ h4 {
   width: 350px;
   margin-bottom: 15px;
   box-sizing: border-box;
-  /*додати відступ*/
+  outline: none;
+  color: #fff;
 }
 
 .left {
