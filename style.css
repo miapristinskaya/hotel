@@ -1,3 +1,5 @@
+/*можна буде пізніше винести окремо спільні стилі для кнопок і тексту*/
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0; /*прибрано білі края*/
@@ -170,6 +172,19 @@ h4 {
   color: #fff;
   font-size: 21px;
   cursor: pointer;
+}
+
+/*КАРТА - MAP*/
+
+.map-heading {
+  color: #0f4c92;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 75px auto;
+}
+
+.map {
+  filter: grayscale(100%);
 }
 
 /*МОДАЛЬНЕ ВІКНО - CALLBACK*/
