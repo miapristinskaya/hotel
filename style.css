@@ -5,6 +5,10 @@ body {
   margin: 0; /*прибрано білі края*/
 }
 
+a {
+  color: #fff;
+}
+
 /*ВЕРХНЯ ЧАСТИНА - HEADER*/
 
 header {
@@ -16,17 +20,11 @@ header {
   text-align: center;
 }
 
-.logotype {
-  display: block;
-  margin: 0 auto;
-  width: 260px;
-  margin-bottom: 227px;
-}
-
 h1 {
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 75px;
+  margin-top: 227px;
 }
 
 .header_text {
@@ -187,6 +185,29 @@ h4 {
   filter: grayscale(100%);
 }
 
+/*НИЖНЯ ЧАСТИНА - FOOTER*/
+
+footer {
+  background: #0b83be;
+  padding: 47px 0 113px;
+}
+
+.footer_container {
+  margin: 0 auto;
+  width: 703px;
+  text-align: center;
+}
+
+.footer_text {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.footer_address {
+  margin-top: 90px;
+}
+
 /*МОДАЛЬНЕ ВІКНО - CALLBACK*/
 
 .overlay {
@@ -197,10 +218,10 @@ h4 {
   position: fixed;
   width: 100%;
   height: 100%;
-  display: flex;
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .callback {
