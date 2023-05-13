@@ -1,4 +1,3 @@
-/*можна буде пізніше винести окремо спільні стилі для кнопок і тексту*/
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +9,36 @@ body {
 a {
   color: #fff;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h2 {
+  color: #0f4c92;
+  font-size: 40px;
+}
+
+/*СПІЛЬНІ СТИЛІ ДЛЯ КНОПОК*/
+
+.button_common {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.button_orange {
+  background-color: #ff9728;
+  padding: 16px 40px;
+  border-radius: 84px;
+}
+
+/*ФІКСОВАНЕ ЗНИЗУ ЗЛІВА ПОСИЛАННЯ "НА ПОЧАТОК"*/
 
 .top-link {
   position: fixed;
@@ -35,7 +64,6 @@ header {
 
 h1 {
   font-size: 60px;
-  font-weight: 700;
   margin-bottom: 75px;
   margin-top: 227px;
 }
@@ -43,17 +71,6 @@ h1 {
 .header_text {
   font-size: 20px;
   margin-bottom: 31px;
-}
-
-.header_button {
-  background-color: #ff9728;
-  border: none;
-  padding: 16px 40px;
-  border-radius: 84px;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 21px;
-  cursor: pointer;
 }
 
 /*НЕВЕЛИКІ ЧАСТИНИ З ТЕКСТОМ - INFO*/
@@ -71,7 +88,6 @@ h1 {
 h2 {
   color: #0f4c92;
   font-size: 40px;
-  font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -107,7 +123,6 @@ h2 {
 
 h4 {
   font-size: 26px;
-  font-weight: 700;
   color: #0f4c92;
 }
 
@@ -125,9 +140,6 @@ h4 {
 }
 
 .advantage_button {
-  font-size: 21px;
-  color: #ffffff;
-  border: none;
   border-radius: 95px;
   padding: 15px 70px;
   background-color: #0d599c;
@@ -161,7 +173,6 @@ h4 {
 
 .booking_heading {
   font-size: 40px;
-  font-weight: 700;
   color: #f4f4f4;
   margin-top: 0;
 }
@@ -174,23 +185,9 @@ h4 {
   line-height: 21px;
 }
 
-.booking_button {
-  background-color: #ff9728;
-  border: none;
-  padding: 16px 40px;
-  border-radius: 84px;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 21px;
-  cursor: pointer;
-}
-
 /*КАРТА - MAP*/
 
 .map-heading {
-  color: #0f4c92;
-  font-size: 40px;
-  font-weight: 700;
   margin: 75px auto;
 }
 
@@ -227,7 +224,6 @@ footer {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50px;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -254,12 +250,11 @@ footer {
   color: #f9f9f9;
   text-align: center;
   font-size: 40px;
-  font-weight: 700;
   margin-bottom: 78px;
   margin-top: 0;
 }
 
-.callback input {
+.callback input[type="text"] {
   background-color: transparent;
   border-radius: 30px;
   border: 1px solid #f7f6f6;
@@ -283,15 +278,6 @@ footer {
 }
 
 .callback .callback_button {
-  background-color: #ff9728;
-  width: 192px;
-  border: none;
-  padding: 16px 0;
-  border-radius: 84px;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 21px;
-  cursor: pointer;
   display: block;
   margin: 55px auto 0;
 }

@@ -15,13 +15,16 @@
   </head>
   <body>
     <a href="#" id="top"></a>
+
     <header>
       <a href="./index.html"
         ><img src="./images/Logo.svg" alt="logo" width="259"
       /></a>
       <h1>Готель біля моря</h1>
       <p class="header_text">Сучасний готель з котеджами і власним пляжем</p>
-      <button class="header_button">Переглянути</button>
+      <button class="button_common button_orange button_call">
+        Переглянути
+      </button>
     </header>
 
     <main>
@@ -58,7 +61,9 @@
                 трансфер. Подаруйте собі чудовий відпочинок у моря разом з нашим
                 готелем
               </p>
-              <button class="advantage_button">Дізнатись більше</button>
+              <button class="advantage_button button_common button_call">
+                Дізнатись більше
+              </button>
             </div>
           </div>
 
@@ -86,7 +91,9 @@
                 діаметром 15 метрів обладнаний водними гірками, від яких ваші
                 маленькі непосиди будуть в захваті.
               </p>
-              <button class="advantage_button">Дізнатись більше</button>
+              <button class="advantage_button button_common button_call">
+                Дізнатись більше
+              </button>
             </div>
           </div>
 
@@ -109,7 +116,9 @@
                 страви, а офіціанти забезпечать уважне і ненав'язливе
                 обслуговування.
               </p>
-              <button class="advantage_button">Дізнатись більше</button>
+              <button class="advantage_button button_common button_call">
+                Дізнатись більше
+              </button>
             </div>
           </div>
         </div>
@@ -134,29 +143,18 @@
 
     <section class="booking">
       <div class="booking_container">
-        <h2 class="booking_heading">Забронювати номер</h2>
+        <h3 class="booking_heading">Забронювати номер</h3>
         <p class="booking_text">
           Ми приймаємо замовлення цілодобово та без вихідних. Наберіть номер і
           скажіть, у яких апартаментах хочете поселитися. Або заповніть всі поля
           форми та надішліть заявку. Обов’язково вкажіть ваш телефон та адресу
           електронної пошти для зворотного зв’язку.
         </p>
-        <button class="booking_button">Заповнити форму</button>
+        <button class="button_common button_orange button_call">
+          Заповнити форму
+        </button>
       </div>
     </section>
-
-    <div class="overlay">
-      <div class="callback">
-        <h3>Наш менеджер зв’яжеться з вами</h3>
-        <form action="">
-          <input class="left" type="text" placeholder="Ім'я" />
-          <input type="text" placeholder="Прізвище" />
-          <input class="left" type="text" placeholder="Email" />
-          <input type="text" placeholder="Номер телефону" />
-          <input class="callback_button" type="submit" value="Відправити" />
-        </form>
-      </div>
-    </div>
 
     <section class="map-section">
       <h2 class="map-heading">Відпочинок біля моря в міжсезоння</h2>
@@ -193,12 +191,24 @@
       </div>
     </footer>
 
-    <a href="#top" class="top-link">Вгору ↑</a>
+    <a href="#top" class="top-link">На початок ↑</a>
 
-    <!--
-зробити, щоб всі кнопки викликали форму
-щоб форма зникала при натисканні на оверлей, але не на форму
--->
+    <div class="overlay">
+      <div class="callback">
+        <h3>Наш менеджер зв’яжеться з вами</h3>
+        <form action="">
+          <input class="left" type="text" placeholder="Ім'я" />
+          <input type="text" placeholder="Прізвище" />
+          <input class="left" type="text" placeholder="Email" />
+          <input type="text" placeholder="Номер телефону" />
+          <input
+            class="callback_button button_common button_orange"
+            type="submit"
+            value="Відправити"
+          />
+        </form>
+      </div>
+    </div>
 
     <script src="./main.js"></script>
   </body>
